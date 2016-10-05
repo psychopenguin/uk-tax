@@ -1,1 +1,1 @@
-web: flask run --host 0.0.0.0
+web: uwsgi --http 0.0.0.0:8000 --module get_taxes --callable app
